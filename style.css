@@ -1,7 +1,26 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.flexContainer { 
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+}
+.workGrid {
+  display: grid;
+}
+.gridContainer {
+  display: grid;
+  grid-template-areas: "myArea myArea" 
+  grid-template-rows: 20%;
+  grid-template-columns: 20%;
+}
+@media only screen and (max-width: 600) {
+  #categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "UNISEF USA"
+    "MediShare"
+    "another project";
+  }
 }
